@@ -733,7 +733,6 @@ color: var(--secondary-color);
   background-color: white;
   border: 1px solid var(--main-text-color);
 }
-
 /* Checked */
 
 .check__input:checked + .check__box {
@@ -745,4 +744,7 @@ color: var(--secondary-color);
 .rules-link {
   color: var(--accent-color);
   text-decoration: underline;
+}
+.form-container:nth-child(4) {
+  margin-bottom: 20px;
 }
