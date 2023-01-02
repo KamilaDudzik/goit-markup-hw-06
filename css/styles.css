@@ -535,7 +535,7 @@ address {
   background-color: var(--accent-color);
 }
 .newsletter-section {
-  margin-left: 78px;
+  margin-left: auto;
 }
 .newsletter-section > label {
 text-transform: uppercase;
@@ -630,7 +630,7 @@ color: var(--secondary-color);
 .modal-forms {
   padding: 40px;
 }
-.modal-forms h3 {
+.modal-forms p {
   font-size: 20px;
   font-weight: 700;
   margin-bottom: 12px;
@@ -641,13 +641,12 @@ color: var(--secondary-color);
   text-align: center;
 } 
 .modal-input-box {
-  display: flex;
+  margin-bottom: 10px;
 }
 .modal-label {
   position: relative;
   font-size: 12px;
   color: var(--light-gray);
-  margin-bottom: 4px;
   text-align: left;
   display: block;
 }
@@ -655,16 +654,16 @@ color: var(--secondary-color);
   border: 1px solid var(--modal-input-border);
   border-radius: 4px;
   padding: 15px 42px;
-  margin-bottom: 12px;
+  margin-top: 4px;
   outline: none;
   font-size: 16px;
-  height: 42px;
-  width: 448px;
+  height: 40px;
+  width: 100%;
   transition: border var(--transition-kit);
 }
 .modal-icon {
   position: absolute;
-  top: 26px;
+  top: 50%;
   left: 15px;
   color: var(--main-text-color);
   transition: fill var(--transition-kit);
@@ -695,9 +694,10 @@ color: var(--secondary-color);
 .modal-forms textarea::placeholder {
   color: var(--comment-color);
 }
-.modal-forms span {
+.policy-statement {
   line-height: 1.7;
   color: var(--light-gray);
+  margin-left: 8px;
 }
 .policy-label{
   position: relative;
@@ -707,55 +707,41 @@ color: var(--secondary-color);
 .checkbox {
   margin-right: 8px;
 }
-.checkbox-tick {
+.checked {
   position: absolute;
-  top: 4px;
+  top: 3px;
   left: 15px;
-  fill: var(--secondary-color);
-  background-color: var(--accent-color);
-  border-radius: 2px;
-  border: none;
-  padding: 4px 2px 3px 3px;
+}
+/* Check */
+
+.check.option {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.check__input {
   opacity: 0;
 }
-/*
-.policy-label:checked ~ .checkbox-tick {
- opacity: 1;
-}
-.checkbox-tick:after {
-  content: "";
+.check__box {
   position: absolute;
-  display: none;
-}
-.policy-label input:checked ~ .checkbox-tick:after {
-  display: block;
-}
-.checkbox-tick:after {
-  opacity: 1;
-}
-*/
-/*
-.checkbox-tick input[type="checkbox"] {
-  position: absolute;
-  top: 4px;
+  top: 3px;
   left: 15px;
-  fill: var(--secondary-color);
-  background-color: var(--accent-color);
+  width: 16px;
+  height: 15px;
+  overflow: hidden;
   border-radius: 2px;
+  background-color: white;
+  border: 1px solid var(--main-text-color);
+}
+
+/* Checked */
+
+.check__input:checked + .check__box {
+  background-image: url(images/checked.svg);
+  width: 16px;
+  height: 15px;
   border: none;
-  padding: 4px 2px 3px 3px;
-  background-color: var(--accent-color);
-  margin: 0;
 }
-*/
-.checkbox:checked {
-  opacity: 0;
-}
-/*
-.checkbox:checked + .checkbox-tick {
-  visibility: 1;
-} 
-*/
 .rules-link {
   color: var(--accent-color);
   text-decoration: underline;

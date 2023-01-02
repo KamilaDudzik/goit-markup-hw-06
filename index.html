@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>Studio</title>
+  <title>WebStudio</title>
 
   <!-- Google Fonts links -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -23,7 +23,7 @@
   <header class="header-wrap">
     <div class="container">
       <nav class="nav-list">
-        <a href="#" class="webstudio"><span class="blue-studio">Web</span>Studio</a>
+        <a href="./index.html" class="webstudio"><span class="blue-studio">Web</span>Studio</a>
         <ul class="links-list">
           <li><a href="./index.html" class="social-links current nav-link">Agencja</a></li>
           <li><a href="./portfolio.html" class="social-links">Portfolio</a></li>
@@ -409,28 +409,31 @@
         </svg>
       </button>
       <div class="modal-forms">
-        <h3>Zostaw swoje dane w formularzu poniżej</h3>
+        <p>Zostaw swoje dane w formularzu poniżej</p>
         <form>
           <div class="modal-input-box">
-            <label class="modal-label"><svg width="18" height="18" class="modal-icon">
-                <use href="./images/icons.svg#icon-person-forms"></use>
-              </svg>
+            <label class="modal-label">
               Imię
-              <input type="text" name="name" required class="modal-input" /></label>
+              <input type="text" name="name" required class="modal-input" /><svg width="18" height="18"
+                class="modal-icon">
+                <use href="./images/icons.svg#icon-person-forms"></use>
+              </svg></label>
           </div>
           <div class="modal-input-box">
-            <label class="modal-label"><svg width="18" height="18" class="modal-icon">
-                <use href="./images/icons.svg#icon-phone-forms"></use>
-              </svg>
+            <label class="modal-label">
               Telefon
-              <input type="tel" name="phone" required class="modal-input" /></label>
+              <input type="tel" name="phone" required class="modal-input" /><svg width="18" height="18"
+                class="modal-icon">
+                <use href="./images/icons.svg#icon-phone-forms"></use>
+              </svg></label>
           </div>
           <div class="modal-input-box">
-            <label class="modal-label"><svg width="18" height="18" class="modal-icon">
-                <use href="./images/icons.svg#icon-email-forms"></use>
-              </svg>
+            <label class="modal-label">
               E-mail
-              <input type="text" name="email" required class="modal-input" /></label>
+              <input type="text" name="email" required class="modal-input" /><svg width="18" height="18"
+                class="modal-icon">
+                <use href="./images/icons.svg#icon-email-forms"></use>
+              </svg></label>
           </div>
           <div class="modal-input-box">
             <label class="modal-label">
@@ -438,16 +441,13 @@
               <textarea name="comment" placeholder="Wprowadź tekst" rows="5" class="modal-input"></textarea></label>
           </div>
           <div class="policy-box">
-            <label class="policy-label"><span class="unchecked-box"></span><svg width="16" height="15"
-                class="checkbox-tick">
-                <use href="./images/icons.svg#icon-checkmark"></use>
-              </svg>
-              <input name="checkbox" type="checkbox" required value="agreed" class="checkbox" />
-              <span>
-                Oświadczam iż akceptuję <a href="#" target="_blank" class="rules-link"> Regulamin </a> i <a href="#"
+            <label class="check option">
+              <input class="check__input" type="checkbox">
+              <span class="check__box"></span>
+              <span class="policy-statement">
+                Oświadczam iż akceptuję <a href="#" target="_blank" class="rules-link"> Regulamin</a> i <a href="#"
                   target="_blank" class="rules-link"> Politykę Prywatności</a>.
-              </span>
-            </label>
+            </span></label>
           </div>
           <button type="submit" class="modal-submit-button">Wyślij</button>
         </form>
